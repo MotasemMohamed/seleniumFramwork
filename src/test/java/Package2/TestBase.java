@@ -21,7 +21,7 @@ public class TestBase {
 	@BeforeTest
 	public void Essentialtest()
 	{
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/Drivers/chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/Drivers/chromedriver.exe");	
 		driver= new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://demo.nopcommerce.com/");
