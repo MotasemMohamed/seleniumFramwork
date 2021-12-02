@@ -20,7 +20,7 @@ public class RegisterationTestcase extends TestBase{
 	{
 		homeobject= new HomePage(driver);
 		registerationobject = new Registerationpage(driver);
-		String csv_file = "D:/D/Eclips projects/Etslat/src/test/resources/Data/UserData.csv";
+		String csv_file = System.getProperty("user.dir")+"src/test/resources/Drivers/Data/UserData.csv";
 		Reader= new CSVReader(new FileReader(csv_file));
 		String[] csv_cell ;
 
