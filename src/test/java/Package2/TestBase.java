@@ -31,7 +31,7 @@ public class TestBase {
 	public void screenshot() throws IOException
 	{
 		Screenshot s= new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
-		ImageIO.write(s.getImage(),"PNG",new File("D:/D/Eclips projects/Etslat/Screenshot1/particularElementScreenshot.PNG"));
+		ImageIO.write(s.getImage(),"PNG",new File(System.getProperty("user.dir")+"/Screenshot1/particularElementScreenshot.PNG"));
 	}
 	@AfterTest
 	public void closetest()
