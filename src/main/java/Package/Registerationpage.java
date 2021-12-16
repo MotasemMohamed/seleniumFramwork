@@ -22,6 +22,10 @@ public class Registerationpage extends PageBase{
 		driver.findElement(By.id("Email")).sendKeys(Email);
 		driver.findElement(By.id("Password")).sendKeys(Password);
 		driver.findElement(By.id("ConfirmPassword")).sendKeys(Password);	
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("register-button")));
+		driver.findElement(By.id("register-button")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a.button-1.register-continue-button")));
+		driver.findElement(By.cssSelector("a.button-1.register-continue-button")).click();
 	}
 
 }

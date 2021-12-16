@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Package2.RegisterationTestcase">
+      <class name="Package2.BuyProductTestcase">
         <methods>
           <include name="closetest"/>
           <include name="screenshot"/>
-          <include name="userregisterationsuccessfully"/>
+          <include name="Buyproductsuccessfully"/>
           <include name="Essentialtest"/>
         </methods>
-      </class> <!-- Package2.RegisterationTestcase -->
+      </class> <!-- Package2.BuyProductTestcase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

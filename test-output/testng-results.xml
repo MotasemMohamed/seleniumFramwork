@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-09T06:38:26Z" name="Default suite" finished-at="2021-12-09T06:38:41Z" duration-ms="15067">
+  <suite started-at="2021-12-13T18:54:48Z" name="Default suite" finished-at="2021-12-13T18:55:09Z" duration-ms="20735">
     <groups>
     </groups>
-    <test started-at="2021-12-09T06:38:26Z" name="Default test" finished-at="2021-12-09T06:38:41Z" duration-ms="15067">
-      <class name="Package2.RegisterationTestcase">
-        <test-method is-config="true" signature="Essentialtest()[pri:0, instance:Package2.RegisterationTestcase@6fa34d52]" started-at="2021-12-09T06:38:26Z" name="Essentialtest" finished-at="2021-12-09T06:38:31Z" duration-ms="4932" status="PASS">
+    <test started-at="2021-12-13T18:54:48Z" name="Default test" finished-at="2021-12-13T18:55:09Z" duration-ms="20735">
+      <class name="Package2.BuyProductTestcase">
+        <test-method is-config="true" signature="Essentialtest()[pri:0, instance:Package2.BuyProductTestcase@2049a9c1]" started-at="2021-12-13T18:54:48Z" name="Essentialtest" finished-at="2021-12-13T18:54:52Z" duration-ms="4360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Essentialtest -->
-        <test-method signature="userregisterationsuccessfully()[pri:0, instance:Package2.RegisterationTestcase@6fa34d52]" started-at="2021-12-09T06:38:31Z" name="userregisterationsuccessfully" finished-at="2021-12-09T06:38:34Z" duration-ms="3218" status="PASS">
+        <test-method signature="Buyproductsuccessfully()[pri:0, instance:Package2.BuyProductTestcase@2049a9c1]" started-at="2021-12-13T18:54:53Z" name="Buyproductsuccessfully" finished-at="2021-12-13T18:55:01Z" duration-ms="8515" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userregisterationsuccessfully -->
-        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.RegisterationTestcase@6fa34d52]" started-at="2021-12-09T06:38:34Z" name="screenshot" finished-at="2021-12-09T06:38:40Z" duration-ms="5512" status="PASS">
+        </test-method> <!-- Buyproductsuccessfully -->
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@2049a9c1]" started-at="2021-12-13T18:55:01Z" name="screenshot" finished-at="2021-12-13T18:55:08Z" duration-ms="7016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method is-config="true" signature="closetest()[pri:0, instance:Package2.RegisterationTestcase@6fa34d52]" started-at="2021-12-09T06:38:40Z" name="closetest" finished-at="2021-12-09T06:38:41Z" duration-ms="1371" status="PASS">
+        <test-method is-config="true" signature="closetest()[pri:0, instance:Package2.BuyProductTestcase@2049a9c1]" started-at="2021-12-13T18:55:08Z" name="closetest" finished-at="2021-12-13T18:55:09Z" duration-ms="804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closetest -->
-      </class> <!-- Package2.RegisterationTestcase -->
+      </class> <!-- Package2.BuyProductTestcase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -2,28 +2,50 @@ package Package;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends PageBase
 {
 	WebDriverWait wait = new WebDriverWait(driver,30);
 
+	@FindBy(css="li.ui-menu-item")
+	List<WebElement>productlist;
+	
 	public HomePage(WebDriver driver) {
 		super(driver);
 	}
-	@FindBy(linkText ="Register")
-	WebElement Registerationlink;
+	//@FindBy(linkText ="Register")
+	//WebElement Registerationlink;
+
 	public void openregisterationpage()
 	{
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Register")));
-		Registerationlink.click();
+		driver.findElement(By.linkText("Register")).click();
 	}
+	public void openLoginpage()
+	{
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a.ico-login")));
+		driver.findElement(By.cssSelector("a.ico-login")).click();
+	}
+
+
+	public void Searchbutton()
+	{
+	//	List<WebElement> productlist= driver.findElement(By.);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("small-searchterms")));
+		driver.findElement(By.id("small-searchterms")).sendKeys("samsung");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("li.ui-menu-item")));
+		productlist.get(0).click();
+	}
+
 	/*
 	public void Brockenlinks()
 	{

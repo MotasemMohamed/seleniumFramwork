@@ -3,6 +3,8 @@ package Package2;
 import java.io.FileReader;
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.opencsv.CSVReader;
@@ -24,13 +26,15 @@ public class RegisterationTestcase extends TestBase{
 		Reader= new CSVReader(new FileReader(csv_file));
 		String[] csv_cell ;
 
-	while ((csv_cell = Reader.readNext())!= null) {	
-		String Firstname = csv_cell[0];
-		String Lasttname = csv_cell[1];
-		String Email = csv_cell[2];
-		String Password = csv_cell[3];
-		homeobject.openregisterationpage();
-		registerationobject.Registeration(Firstname, Lasttname, Email, Password);
+		while ((csv_cell = Reader.readNext())!= null) {	
+			String Firstname = csv_cell[0];
+			String Lasttname = csv_cell[1];
+			String Email = csv_cell[2];
+			String Password = csv_cell[3];
+			homeobject.openregisterationpage();
+			registerationobject.Registeration(Firstname, Lasttname, Email, Password);
+			Assert.assertEquals("Log out",driver.findElement(By.cssSelector("a.ico-logout")).getText());
+		}
 	}
-	}
+
 }
