@@ -1,6 +1,7 @@
 package Package2;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,6 +18,7 @@ public class BuyProductTestcase extends TestBase{
 	Registerationpage registerationobject;
 	LoginPage login;
 	CSVReader Reader;
+	WebDriverWait wait = new WebDriverWait(driver,30);
 	@Test (priority = 1)
 	public void Usercansearchwithautosuggest() 
 	{
