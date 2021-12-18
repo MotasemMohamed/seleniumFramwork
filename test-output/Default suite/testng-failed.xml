@@ -7,8 +7,10 @@
         <methods>
           <include name="closetest"/>
           <include name="screenshot"/>
-          <include name="Buyproductsuccessfully"/>
+          <include name="Usercanaddproductinthecart"/>
           <include name="Essentialtest"/>
+          <include name="Confirm"/>
+          <include name="Usercansearchwithautosuggest"/>
         </methods>
       </class> <!-- Package2.BuyProductTestcase -->
     </classes>

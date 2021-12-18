@@ -17,7 +17,7 @@ public class BuyProductTestcase extends TestBase{
 	Registerationpage registerationobject;
 	LoginPage login;
 	CSVReader Reader;
-	@Test
+	@Test (priority = 1)
 	public void Usercansearchwithautosuggest() 
 	{
 		homeobject= new HomePage(driver);
@@ -27,18 +27,20 @@ public class BuyProductTestcase extends TestBase{
 		Assert.assertEquals("Samsung Series 9 NP900X4C Premium Ultrabook",driver.findElement(By.cssSelector("a.product-name")).getText()); 
 	}
 
-	@Test
+	@Test (priority = 2)
 	public void Usercanaddproductinthecart() 
 	{
 		ProductDetailsPage productdetailsobject= new ProductDetailsPage(driver);
 		productdetailsobject.AddProductintheCart();
 		Assert.assertEquals("The product has been added to your",driver.findElement(By.cssSelector("p.content")).getText()); 	     
 	}
-	@Test
+	@Test (priority = 3)
 	public void Confirm() 
 	{
 		Assert.assertEquals("Shopping cart",driver.findElement(By.cssSelector("p.content")).getText());
 		ShoppingCartPage shopingcartobject= new ShoppingCartPage(driver);
 		shopingcartobject.Chectout();
+		shopingcartobject.Chectoutdetails();
+		Assert.assertEquals("Categories",driver.findElement(By.xpath("//div[@class='master-wrapper-page']/div[@class='header-menu']/div")).getText());
 	}
 }
