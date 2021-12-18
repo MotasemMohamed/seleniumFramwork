@@ -7,6 +7,7 @@ import javax.imageio.ImageIO;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -17,7 +18,7 @@ import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class TestBase {
 	public  static WebDriver driver;
-
+	WebDriverWait wait = new WebDriverWait(driver,30);
 	@BeforeTest
 	public void Essentialtest()
 	{

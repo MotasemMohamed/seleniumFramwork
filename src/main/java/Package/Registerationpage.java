@@ -14,6 +14,7 @@ public class Registerationpage extends PageBase{
 	{
 		//JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebDriverWait wait = new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("FirstName")));
 		driver.findElement(By.id("FirstName")).sendKeys(Firstname);
 		driver.findElement(By.id("LastName")).sendKeys(Lastname);
 		//js.executeScript("arguments[0].scrollIntoView();", driver.findElement(By.id(Email)));

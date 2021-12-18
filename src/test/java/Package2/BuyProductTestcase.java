@@ -21,6 +21,8 @@ public class BuyProductTestcase extends TestBase{
 	public void Usercansearchwithautosuggest() 
 	{
 		homeobject= new HomePage(driver);
+		homeobject.openregisterationpage();
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("FirstName")));
 		registerationobject.Registeration("a","a", "a@a.com", "123456");
 		Assert.assertEquals("Log out",driver.findElement(By.cssSelector("a.ico-logout")).getText());
 		homeobject.Searchbutton();	
