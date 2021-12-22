@@ -15,10 +15,10 @@ public class ShoppingCartPage extends PageBase
 	}
 
 	public void Chectout()
-	{
+	{	
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("checkout")));	
 		driver.findElement(By.id("termsofservice")).isSelected();
 		driver.findElement(By.id("checkout")).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Checkout")));	
 	}
 
 	public void Chectoutdetails()
@@ -41,8 +41,7 @@ public class ShoppingCartPage extends PageBase
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button.button-1.confirm-order-next-step-button")));
 	    driver.findElement(By.cssSelector("button.button-1.confirm-order-next-step-button")).click();
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button.button-1.order-completed-continue-button")));
-	    driver.findElement(By.cssSelector("button.button-1.order-completed-continue-button")).click();
-	    
-	}//div[@class='page-title']/h1
+	    driver.findElement(By.cssSelector("button.button-1.order-completed-continue-button")).click();  
+	}
 
 }
