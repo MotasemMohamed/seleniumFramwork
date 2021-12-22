@@ -27,7 +27,7 @@ public class BuyProductTestcase extends TestBase{
 		homeobject.openregisterationpage();
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("FirstName")));
-		registerationobject.Registeration("a","a", "aszsdsssa@a.com", "123456");
+		registerationobject.Registeration("a","a", "assszssssdsssa@a.com", "123456");
 		Assert.assertEquals("Log out",driver.findElement(By.cssSelector("a.ico-logout")).getText());
 		homeobject.Searchbutton();	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='product-name']/h1")));
@@ -46,6 +46,7 @@ public class BuyProductTestcase extends TestBase{
 	{
 		ShoppingCartPage shopingcartobject= new ShoppingCartPage(driver);
 		shopingcartobject.Chectout();	
+		Assert.assertEquals("First name:",driver.findElement(By.xpath("(//div[@class='inputs']/label)[1]")).getText());
 		shopingcartobject.Chectoutdetails();
 		Assert.assertEquals("Categories",driver.findElement(By.xpath("//div[@class='master-wrapper-page']/div[@class='header-menu']/div")).getText());
 	}

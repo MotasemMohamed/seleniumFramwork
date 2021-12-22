@@ -2,70 +2,52 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-22T02:02:11Z" name="Default suite" finished-at="2021-12-22T02:02:50Z" duration-ms="39538">
+  <suite started-at="2021-12-22T02:31:42Z" name="Default suite" finished-at="2021-12-22T02:33:03Z" duration-ms="80832">
     <groups>
     </groups>
-    <test started-at="2021-12-22T02:02:11Z" name="Default test" finished-at="2021-12-22T02:02:50Z" duration-ms="39538">
+    <test started-at="2021-12-22T02:31:42Z" name="Default test" finished-at="2021-12-22T02:33:03Z" duration-ms="80832">
       <class name="Package2.BuyProductTestcase">
-        <test-method is-config="true" signature="Essentialtest()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:02:11Z" name="Essentialtest" finished-at="2021-12-22T02:02:17Z" duration-ms="5938" status="PASS">
+        <test-method is-config="true" signature="Essentialtest()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:31:42Z" name="Essentialtest" finished-at="2021-12-22T02:31:49Z" duration-ms="6556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Essentialtest -->
-        <test-method signature="Usercansearchwithautosuggest()[pri:1, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:02:17Z" name="Usercansearchwithautosuggest" finished-at="2021-12-22T02:02:31Z" duration-ms="14148" status="PASS">
+        <test-method signature="Usercansearchwithautosuggest()[pri:1, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:31:49Z" name="Usercansearchwithautosuggest" finished-at="2021-12-22T02:32:06Z" duration-ms="16893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Usercansearchwithautosuggest -->
-        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:02:31Z" name="screenshot" finished-at="2021-12-22T02:02:38Z" duration-ms="7083" status="PASS">
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:32:06Z" name="screenshot" finished-at="2021-12-22T02:32:13Z" duration-ms="7169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method signature="Usercanaddproductinthecart()[pri:2, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:02:38Z" name="Usercanaddproductinthecart" finished-at="2021-12-22T02:02:42Z" depends-on-methods="Package2.BuyProductTestcase.Usercansearchwithautosuggest" duration-ms="3730" status="PASS">
+        <test-method signature="Usercanaddproductinthecart()[pri:2, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:32:13Z" name="Usercanaddproductinthecart" finished-at="2021-12-22T02:32:18Z" depends-on-methods="Package2.BuyProductTestcase.Usercansearchwithautosuggest" duration-ms="5298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Usercanaddproductinthecart -->
-        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:02:42Z" name="screenshot" finished-at="2021-12-22T02:02:46Z" duration-ms="3693" status="PASS">
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:32:18Z" name="screenshot" finished-at="2021-12-22T02:32:22Z" duration-ms="3770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method signature="Confirm()[pri:3, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:02:46Z" name="Confirm" finished-at="2021-12-22T02:02:46Z" depends-on-methods="Package2.BuyProductTestcase.Usercanaddproductinthecart" duration-ms="204" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="Confirm()[pri:3, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:32:22Z" name="Confirm" finished-at="2021-12-22T02:32:57Z" depends-on-methods="Package2.BuyProductTestcase.Usercanaddproductinthecart" duration-ms="35066" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#BillingNewAddress_CountryId"}
-  (Session info: chrome=96.0.4664.110)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: button.button-1.shipping-method-next-step-button (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-PVK67FC', ip: '192.168.1.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Motasem\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: baa72ffaf810ee8351996d0faa9c78d4
-*** Element info: {Using=id, value=BillingNewAddress_CountryId}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Motasem\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0cebdc3d9929b7229f91eb172c141bb]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#BillingNewAddress_CountryId"}
-  (Session info: chrome=96.0.4664.110)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: button.button-1.shipping-method-next-step-button (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-PVK67FC', ip: '192.168.1.152', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Motasem\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: baa72ffaf810ee8351996d0faa9c78d4
-*** Element info: {Using=id, value=BillingNewAddress_CountryId}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at Package.ShoppingCartPage.Chectoutdetails(ShoppingCartPage.java:26)
-at Package2.BuyProductTestcase.Confirm(BuyProductTestcase.java:49)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Motasem\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0cebdc3d9929b7229f91eb172c141bb
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at Package.ShoppingCartPage.Chectoutdetails(ShoppingCartPage.java:38)
+at Package2.BuyProductTestcase.Confirm(BuyProductTestcase.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,15 +75,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Confirm -->
-        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:02:46Z" name="screenshot" finished-at="2021-12-22T02:02:50Z" duration-ms="3802" status="PASS">
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:32:57Z" name="screenshot" finished-at="2021-12-22T02:33:02Z" duration-ms="5101" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshot -->
-        <test-method is-config="true" signature="closetest()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:02:50Z" name="closetest" finished-at="2021-12-22T02:02:50Z" duration-ms="894" status="PASS">
+        <test-method is-config="true" signature="closetest()[pri:0, instance:Package2.BuyProductTestcase@46271dd6]" started-at="2021-12-22T02:33:02Z" name="closetest" finished-at="2021-12-22T02:33:03Z" duration-ms="931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closetest -->
