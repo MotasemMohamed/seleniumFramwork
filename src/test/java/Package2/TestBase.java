@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
@@ -17,12 +19,15 @@ import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class TestBase {
 	public  static WebDriver driver;
-	
+
 	@BeforeTest
-	public void Essentialtest()
+	@Parameters({"browser"})
+	public void Startdriver(@Optional("chrome")String browsername)
 	{
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/Drivers/chromedriver.exe");	
-		driver= new ChromeDriver();
+		if(browsername.equalsIgnoreCase("chrome")) {	
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/resources/Drivers/chromedriver.exe");	
+			driver= new ChromeDriver();
+		}
 		driver.manage().window().maximize();
 		driver.navigate().to("https://demo.nopcommerce.com/");
 	}
