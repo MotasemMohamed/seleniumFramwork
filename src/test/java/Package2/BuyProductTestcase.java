@@ -27,7 +27,7 @@ public class BuyProductTestcase extends TestBase{
 		homeobject.openregisterationpage();
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("FirstName")));
-		registerationobject.Registeration("a","a", "asdcdfhsssdssja@a.com", "123456");
+		registerationobject.Registeration("a","a", "asdcdhhssshsll@a.com", "123456");
 		Assert.assertEquals("Log out",driver.findElement(By.cssSelector("a.ico-logout")).getText());
 		homeobject.Searchbutton();	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='product-name']/h1")));
