@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-04T21:25:19Z" name="Suite" finished-at="2022-02-04T21:26:16Z" duration-ms="57742">
+    <groups>
+    </groups>
+    <test started-at="2022-02-04T21:25:19Z" name="Regression Test" finished-at="2022-02-04T21:26:16Z" duration-ms="57742">
+      <class name="Package2.BuyProductTestcase">
+        <test-method is-config="true" signature="Startdriver(java.lang.String)[pri:0, instance:Package2.BuyProductTestcase@43c1b556]" started-at="2022-02-04T21:25:19Z" name="Startdriver" finished-at="2022-02-04T21:25:25Z" duration-ms="6112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Startdriver -->
+        <test-method signature="Usercansearchwithautosuggest()[pri:1, instance:Package2.BuyProductTestcase@43c1b556]" started-at="2022-02-04T21:25:25Z" name="Usercansearchwithautosuggest" finished-at="2022-02-04T21:25:40Z" duration-ms="14681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Usercansearchwithautosuggest -->
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@43c1b556]" started-at="2022-02-04T21:25:40Z" name="screenshot" finished-at="2022-02-04T21:25:47Z" duration-ms="7052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method signature="Usercanaddproductinthecart()[pri:2, instance:Package2.BuyProductTestcase@43c1b556]" started-at="2022-02-04T21:25:47Z" name="Usercanaddproductinthecart" finished-at="2022-02-04T21:25:51Z" depends-on-methods="Package2.BuyProductTestcase.Usercansearchwithautosuggest" duration-ms="4364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Usercanaddproductinthecart -->
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@43c1b556]" started-at="2022-02-04T21:25:51Z" name="screenshot" finished-at="2022-02-04T21:25:55Z" duration-ms="3884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method signature="Confirm()[pri:3, instance:Package2.BuyProductTestcase@43c1b556]" started-at="2022-02-04T21:25:55Z" name="Confirm" finished-at="2022-02-04T21:26:09Z" depends-on-methods="Package2.BuyProductTestcase.Usercanaddproductinthecart" duration-ms="14065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Confirm -->
+        <test-method is-config="true" signature="screenshot()[pri:0, instance:Package2.BuyProductTestcase@43c1b556]" started-at="2022-02-04T21:26:09Z" name="screenshot" finished-at="2022-02-04T21:26:16Z" duration-ms="6783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method is-config="true" signature="closetest()[pri:0, instance:Package2.BuyProductTestcase@43c1b556]" started-at="2022-02-04T21:26:16Z" name="closetest" finished-at="2022-02-04T21:26:16Z" duration-ms="762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closetest -->
+      </class> <!-- Package2.BuyProductTestcase -->
+    </test> <!-- Regression Test -->
+  </suite> <!-- Suite -->
+</testng-results>
