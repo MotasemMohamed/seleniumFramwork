@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class HomePage extends PageBase
 {
 	WebDriverWait wait = new WebDriverWait(driver,30);
-
+//Motasem
 	@FindBy(css="li.ui-menu-item")
 	List<WebElement>productlist;
 	
